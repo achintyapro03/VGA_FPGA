@@ -4,7 +4,7 @@
     "xci_name": "clk_wiz_0",
     "component_reference": "xilinx.com:ip:clk_wiz:6.0",
     "ip_revision": "11",
-    "gen_directory": "../../../../project_project.gen/sources_1/ip/clk_wiz_0",
+    "gen_directory": "../../../../project_VGA_ImageViewer.gen/sources_1/ip/clk_wiz_0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "clk_wiz_0", "resolve_type": "user", "usage": "all" } ],
@@ -50,7 +50,7 @@
         "SECONDARY_IN_JITTER": [ { "value": "0.010", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "CLKIN1_JITTER_PS": [ { "value": "100.0", "resolve_type": "user", "format": "float", "usage": "all" } ],
         "CLKIN2_JITTER_PS": [ { "value": "100.0", "resolve_type": "user", "format": "float", "usage": "all" } ],
-        "CLKOUT1_USED": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "CLKOUT1_USED": [ { "value": "true", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "CLKOUT2_USED": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "CLKOUT3_USED": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "CLKOUT4_USED": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
@@ -601,7 +601,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "11" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../project_project.gen/sources_1/ip/clk_wiz_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../project_VGA_ImageViewer.gen/sources_1/ip/clk_wiz_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2022.2" } ],
