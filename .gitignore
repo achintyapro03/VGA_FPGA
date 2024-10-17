@@ -1,0 +1,3 @@
+project_project/*
+!project_project.srcs
+*.vcd
