@@ -1,6 +1,6 @@
 module vga_controller (
-    input clk,
-    input reset, 
+    input wire clk,
+    input wire reset, 
     output wire h_sync,       
     output wire v_sync,      
     output wire [11:0] x_idx, 
@@ -8,15 +8,17 @@ module vga_controller (
     output wire video_enable
 );
 
+    wire reset_inv;
+    assign reset_inv = ~reset;
+    parameter pixels_h      = 1920;
     parameter front_porch_h = 88;
     parameter sync_width_h  = 44;
     parameter back_porch_h  = 148;
-    parameter pixels_h      = 1920;
 
+    parameter pixels_v      = 1080; 
     parameter front_porch_v = 4;
     parameter sync_width_v  = 5;
     parameter back_porch_v  = 36;
-    parameter pixels_v      = 1080; 
 
     wire video_enable_h, video_enable_v;
 
@@ -30,7 +32,7 @@ module vga_controller (
         .pixels_h(pixels_h)
     ) h_cont (
         .clk(clk),
-        .reset(reset), 
+        .reset(reset_inv), 
         .h_sync(h_sync),           
         .video_enable(video_enable_h),
         .x_idx(x_idx)             
@@ -44,7 +46,7 @@ module vga_controller (
         .h_total(h_total)
     ) v_cont (
         .clk(clk),
-        .reset(reset), 
+        .reset(reset_inv), 
         .v_sync(v_sync),            
         .video_enable(video_enable_v),
         .x_idx(x_idx),            

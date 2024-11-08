@@ -4,8 +4,8 @@ module h_sync_controller #(
     parameter back_porch_h  = 148,
     parameter pixels_h      = 1920
 )(
-    input clk,
-    input reset,
+    input wire clk,
+    input wire reset,
     output reg h_sync,
     output reg video_enable,
     output reg [11:0] x_idx

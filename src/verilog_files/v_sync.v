@@ -5,11 +5,11 @@ module v_sync_controller #(
     parameter pixels_v = 1080, 
     parameter h_total = 2200
 )(
-    input clk,
-    input reset,
+    input wire clk,
+    input wire reset,
     output reg v_sync,
     output reg video_enable,
-    input [11:0] x_idx,    
+    input wire [11:0] x_idx,    
     output reg [11:0] y_idx 
 );
 
